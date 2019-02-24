@@ -38,16 +38,16 @@ class UserTest < ActiveSupport::TestCase
       @user.email = valid_address
       assert @user.valid?, "#{valid_address.inspect} should be valid"
     end
+  end
 
-    test "password should be present (nonblank)" do
-      @user.password = @user.password_confirmation = " " * 6
-      assert_not @user.valid?
-    end
+  test "password should be present (nonblank)" do
+    @user.password = @user.password_confirmation = " " * 6
+    assert_not @user.valid?
+  end
   
-    test "password should have a minimum length" do
-      @user.password = @user.password_confirmation = "a" * 5
-      assert_not @user.valid?
-    end
+  test "password should have a minimum length" do
+    @user.password = @user.password_confirmation = "a" * 5
+    assert_not @user.valid?
   end
 
   test "email validation should reject invalid addresses" do
