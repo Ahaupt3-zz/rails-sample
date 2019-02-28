@@ -28,3 +28,6 @@
 
 # Ignore uploaded test images.
 /public/uploads
+
+# Ignore Old
+/config/initializers/*.old
