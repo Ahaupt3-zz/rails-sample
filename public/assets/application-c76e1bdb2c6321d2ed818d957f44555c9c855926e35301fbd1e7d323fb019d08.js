@@ -14692,8 +14692,7 @@ Copyright © 2018 Basecamp, LLC
   this.App || (this.App = {});
 
   App.cable = ActionCable.createConsumer();
-
-}).call(this);
+}.call(this));
 (function() {
 
 

@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Lobster");
 /* line 9, /home/alex/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -8786,7 +8787,7 @@ button.close {
 }
 /* mixins, variables, etc. */
 /* miscellaneous */
-/* line 16, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 17, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .debug_dump {
   clear: both;
   float: left;
@@ -8798,37 +8799,43 @@ button.close {
 }
 
 /* universal */
-/* line 26, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 27, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 body {
   padding-top: 60px;
 }
 
-/* line 30, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 31, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 section {
   overflow: auto;
 }
 
-/* line 34, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 35, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 38, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 39, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .center {
   text-align: center;
 }
-/* line 40, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 41, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .center h1 {
   margin-bottom: 10px;
 }
 
 /* typography */
-/* line 47, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
-h1, h2, h3, h4, h5, h6 {
+/* line 48, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lobster', cursive;
   line-height: 1;
 }
 
-/* line 51, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 59, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
@@ -8836,7 +8843,7 @@ h1 {
   text-align: center;
 }
 
-/* line 58, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 66, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
@@ -8846,15 +8853,16 @@ h2 {
   color: #777777;
 }
 
-/* line 67, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 75, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
 
 /* header */
-/* line 75, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 82, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 #logo {
+  font-family: 'Lobster', cursive;
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
@@ -8864,65 +8872,65 @@ p {
   padding-top: 9px;
   font-weight: bold;
 }
-/* line 84, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 92, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 #logo:hover {
   color: white;
   text-decoration: none;
 }
 
 /* footer */
-/* line 92, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 100, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777777;
 }
-/* line 97, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 105, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 footer a {
   color: #555555;
 }
-/* line 99, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 107, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 footer a:hover {
   color: #222222;
 }
-/* line 103, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 111, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 footer small {
   float: left;
 }
-/* line 106, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 114, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 footer ul {
   float: right;
   list-style: none;
 }
-/* line 109, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 117, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 footer ul li {
   float: left;
   margin-left: 15px;
 }
 
 /* sidebar */
-/* line 119, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 127, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 aside section.user_info {
   margin-top: 20px;
 }
-/* line 122, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 130, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 aside section {
   padding: 10px 0;
   margin-top: 20px;
 }
-/* line 125, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 133, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 aside section:first-child {
   border: 0;
   padding-top: 0;
 }
-/* line 129, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 137, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 aside section span {
   display: block;
   margin-bottom: 3px;
   line-height: 1;
 }
-/* line 134, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 142, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 aside section h1 {
   font-size: 1.4em;
   text-align: left;
@@ -8931,20 +8939,70 @@ aside section h1 {
   margin-top: 0px;
 }
 
-/* line 144, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 152, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .gravatar {
   float: left;
   margin-right: 10px;
 }
 
-/* line 149, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 157, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .gravatar_edit {
   margin-top: 15px;
 }
 
+/* line 161, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+}
+/* line 165, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+.stats a {
+  float: left;
+  padding: 0 10px;
+  border-left: 1px solid #eeeeee;
+  color: gray;
+}
+/* line 170, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+.stats a:first-child {
+  padding-left: 0;
+  border: 0;
+}
+/* line 174, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+.stats a:hover {
+  text-decoration: none;
+  color: blue;
+}
+/* line 179, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+.stats strong {
+  display: block;
+}
+
+/* line 184, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+}
+/* line 187, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+.user_avatars .gravatar {
+  margin: 1px 1px;
+}
+/* line 190, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+.user_avatars a {
+  padding: 0;
+}
+
+/* line 195, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+.users.follow {
+  padding: 0;
+}
+
 /* forms */
-/* line 155, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
-input, textarea, select, .uneditable-input {
+/* line 201, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+input,
+textarea,
+select,
+.uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
@@ -8953,50 +9011,50 @@ input, textarea, select, .uneditable-input {
   box-sizing: border-box;
 }
 
-/* line 162, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 211, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 input {
   height: auto !important;
 }
 
-/* line 166, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 215, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 #error_explanation {
   color: red;
 }
-/* line 168, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 217, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 #error_explanation ul {
   color: red;
   margin: 0 0 30px 0;
 }
 
-/* line 176, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 225, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .field_with_errors .form-control {
   color: #a94442;
 }
 
-/* line 181, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 230, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .checkbox {
   margin-top: -10px;
   margin-bottom: 10px;
 }
-/* line 184, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 233, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .checkbox span {
   margin-left: 20px;
   font-weight: normal;
 }
 
-/* line 190, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 239, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 #session_remember_me {
   width: auto;
   margin-left: 0;
 }
 
 /* Users index */
-/* line 197, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 246, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .users {
   list-style: none;
   margin: 0;
 }
-/* line 200, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 249, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .users li {
   overflow: auto;
   padding: 10px 0;
@@ -9004,55 +9062,55 @@ input {
 }
 
 /* microposts */
-/* line 209, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 258, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .microposts {
   list-style: none;
   padding: 0;
 }
-/* line 212, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 261, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .microposts li {
   padding: 10px 0;
   border-top: 1px solid #e8e8e8;
 }
-/* line 216, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 265, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .microposts .user {
   margin-top: 5em;
   padding-top: 0;
 }
-/* line 220, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 269, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .microposts .content {
   display: block;
   margin-left: 60px;
 }
-/* line 223, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 272, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .microposts .content img {
   display: block;
   padding: 5px 0;
 }
-/* line 228, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 277, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .microposts .timestamp {
   color: #777777;
   display: block;
   margin-left: 60px;
 }
-/* line 233, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 282, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 .microposts .gravatar {
   float: left;
   margin-right: 10px;
   margin-top: 5px;
 }
 
-/* line 241, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 290, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 aside textarea {
   height: 100px;
   margin-bottom: 5px;
 }
 
-/* line 247, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 296, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 span.picture {
   margin-top: 10px;
 }
-/* line 249, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+/* line 298, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
 span.picture input {
   border: 0;
 }

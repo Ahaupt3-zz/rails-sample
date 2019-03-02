@@ -1,5 +1,7 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker|Roboto');
 
 /* mixins, variables, etc. */
 
@@ -51,6 +53,7 @@ h4,
 h5,
 h6 {
   line-height: 1;
+  font-family: Roboto;
 }
 
 h1 {
@@ -77,16 +80,17 @@ p {
 /* header */
 
 #logo {
+  font-family: 'Permanent Marker';
   float: left;
   margin-right: 10px;
-  font-size: 1.7em;
+  font-size: 2em;
   color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: green;
     text-decoration: none;
   }
 }
@@ -148,6 +152,7 @@ aside {
 .gravatar {
   float: left;
   margin-right: 10px;
+  border-radius: 50%;
 }
 
 .gravatar_edit {
@@ -169,7 +174,7 @@ aside {
     }
     &:hover {
       text-decoration: none;
-      color: blue;
+      color: green;
     }
   }
   strong {
@@ -263,6 +268,8 @@ input {
     padding-top: 0;
   }
   .content {
+    font-family: 'Indie Flower';
+    font-weight: bold;
     display: block;
     margin-left: 60px;
     img {
