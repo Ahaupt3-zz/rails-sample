@@ -1,5 +1,6 @@
-module SessionsHelper
+# frozen_string_literal: true
 
+module SessionsHelper
   # Logs in the given user.
   def log_in(user)
     session[:user_id] = user.id
@@ -16,7 +17,7 @@ module SessionsHelper
   def current_user?(user)
     user == current_user
   end
-  
+
   # Returns the current logged-in user (if any).
   def current_user
     if (user_id = session[:user_id])

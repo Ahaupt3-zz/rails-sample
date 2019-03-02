@@ -31,3 +31,6 @@
 
 # Ignore Old
 /config/initializers/*.old
+
+# Ignore Node Modules
+/node_modules
