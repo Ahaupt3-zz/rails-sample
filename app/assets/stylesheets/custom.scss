@@ -120,6 +120,25 @@ a {
   }
 }
 
+textarea {
+  border-radius: 15px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+  overflow: auto;
+  outline: none;
+  resize: none;
+  box-shadow: none;
+  &:focus {
+    border-color: lightgreen;
+  }
+}
+
+.form-control {
+  &:focus {
+    border-color: lightgreen;
+  }
+}
 /* typography */
 
 h1,
