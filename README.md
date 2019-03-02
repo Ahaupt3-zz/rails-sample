@@ -10,6 +10,12 @@ is available jointly under the MIT License and the Beerware License. See
 
 https://alex-ror-003.herokuapp.com/
 
+### Test Credentials
+
+Email | test@test.com
+
+Password | Testing
+
 ## Getting started
 
 To get started with the app, clone the repo and then install the needed gems:
