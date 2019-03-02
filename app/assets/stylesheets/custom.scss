@@ -44,6 +44,82 @@ textarea {
   }
 }
 
+a {
+  color: green;
+  &:hover {
+    color: green;
+  }
+}
+
+.delete {
+  color: red;
+}
+
+.pagination {
+  background: white;
+  cursor: default;
+  /* self-clearing method: */
+  a,
+  span,
+  em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px;
+    border-radius: 5px;
+  }
+  .disabled {
+    color: #999999;
+    border: 1px solid #dddddd;
+  }
+  .current {
+    font-style: normal;
+    font-weight: bold;
+    background: green;
+    color: white;
+    border: 1px solid green;
+  }
+  a {
+    text-decoration: none;
+    color: green;
+    border: 1px solid lightgreen;
+    &:hover,
+    &:focus {
+      color: green;
+      border-color: green;
+    }
+  }
+  .page_info {
+    background: #2e6ab1;
+    color: white;
+    padding: 0.4em 0.6em;
+    width: 22em;
+    margin-bottom: 0.3em;
+    text-align: center;
+    b {
+      color: #000033;
+      background: #6aa6ed;
+      padding: 0.1em 0.25em;
+    }
+  }
+  &:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+* {
+  html .pagination {
+    height: 1%;
+  }
+  &:first-child + html .pagination {
+    overflow: hidden;
+  }
+}
+
 /* typography */
 
 h1,
@@ -89,6 +165,7 @@ p {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  text-decoration: none;
   &:hover {
     color: green;
     text-decoration: none;
@@ -145,6 +222,7 @@ aside {
       letter-spacing: -1px;
       margin-bottom: 3px;
       margin-top: 0px;
+      color: green;
     }
   }
 }
@@ -166,7 +244,7 @@ aside {
   a {
     float: left;
     padding: 0 10px;
-    border-left: 1px solid $gray-lighter;
+    border-left: 1px solid $gray-light;
     color: gray;
     &:first-child {
       padding-left: 0;
