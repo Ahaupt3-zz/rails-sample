@@ -399,3 +399,24 @@ span.picture {
     border: 0;
   }
 }
+
+/* micropost character countdown */
+
+.remaining,
+.countdown {
+  display: inline;
+  color: green;
+  float: right;
+}
+
+.overlimit {
+  color: red;
+}
+
+.almostlimit {
+  color: hsl(360, 57%, 21%);
+}
+
+.nearlimit {
+  color: green;
+}
