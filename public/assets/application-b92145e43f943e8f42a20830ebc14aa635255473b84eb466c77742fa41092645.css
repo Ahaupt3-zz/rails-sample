@@ -9158,27 +9158,9 @@ span.picture input {
   border: 0;
 }
 
-/* micropost character countdown */
-/* line 405, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
-.remaining,
-.countdown {
-  display: inline;
-  color: green;
+/* line 403, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
+.counter {
   float: right;
-}
-
-/* line 412, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
-.overlimit {
-  color: red;
-}
-
-/* line 416, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
-.almostlimit {
-  color: #541717;
-}
-
-/* line 420, /home/alex/ruby-repos/ruby_sample/app/assets/stylesheets/custom.scss */
-.nearlimit {
   color: green;
 }
 /*
