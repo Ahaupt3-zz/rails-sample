@@ -400,23 +400,7 @@ span.picture {
   }
 }
 
-/* micropost character countdown */
-
-.remaining,
-.countdown {
-  display: inline;
-  color: green;
+.counter {
   float: right;
-}
-
-.overlimit {
-  color: red;
-}
-
-.almostlimit {
-  color: hsl(360, 57%, 21%);
-}
-
-.nearlimit {
   color: green;
 }
