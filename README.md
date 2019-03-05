@@ -24,6 +24,11 @@ To get started with the app, clone the repo and then install the needed gems:
 $ bundle install --without production
 ```
 
+We also need to install NPM packages:
+```
+$ npm i
+```
+
 Next, migrate the database:
 
 ```
@@ -40,4 +45,17 @@ If the test suite passes, you'll be ready to run the app in a local server:
 
 ```
 $ rails server
+```
+
+After setting up, set Heroku ENV Variables for AWS:
+
+```
+$ heroku config:set <variable>=<value>
+```
+
+```
+...set S3_ACCESS_KEY=<access_key>
+...set S3_BUCKET=<bucket_name>
+...set S3_REGION=<bucket_region>
+...set S3_SECRET_KEY=<secret_key>
 ```
