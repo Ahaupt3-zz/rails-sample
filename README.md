@@ -8,7 +8,7 @@ is available jointly under the MIT License and the Beerware License. See
 
 ## Live Sample
 
-https://alex-ror-003.herokuapp.com/
+https://www.rubypost.live | https://alex-ror-003.herokuapp.com/
 
 ### Test Credentials
 
