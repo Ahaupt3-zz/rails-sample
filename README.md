@@ -26,7 +26,7 @@ $ bundle install --without production
 
 We also need to install NPM packages:
 ```
-$ npm i
+$ npm install
 ```
 
 Next, migrate the database:
@@ -47,7 +47,7 @@ If the test suite passes, you'll be ready to run the app in a local server:
 $ rails server
 ```
 
-After setting up, set Heroku ENV Variables for AWS:
+If you are using Heroku for production, set Heroku ENV Variables for AWS:
 
 ```
 $ heroku config:set <variable>=<value>
