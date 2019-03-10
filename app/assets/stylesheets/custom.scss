@@ -82,10 +82,11 @@ a {
   a {
     text-decoration: none;
     color: green;
-    border: 1px solid lightgreen;
+    border: 1px solid white;
     &:hover,
     &:focus {
-      color: green;
+      color: white;
+      background: green;
       border-color: green;
     }
   }
