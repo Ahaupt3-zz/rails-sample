@@ -6,18 +6,18 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
   get root_path
   assert_response :success
-  assert_select "title", "RoR Sample"
+  assert_select "title", "Ruby Post"
 end
 
   test "should get about" do
     get about_path
     assert_response :success
-    assert_select "title", "About | RoR Sample"
+    assert_select "title", "About | Ruby Post"
   end
 
   test "should get contact" do
     get contact_path
     assert_response :success
-    assert_select "title", "Contact | RoR Sample"
+    assert_select "title", "Contact | Ruby Post"
   end
 end
