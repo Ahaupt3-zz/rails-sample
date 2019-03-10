@@ -355,6 +355,7 @@ GEM
       json (>= 1.8)
       nokogiri (~> 1.5)
       trollop (~> 2.1)
+    redis (3.3.1)
     rest-client (2.0.2)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
@@ -447,6 +448,7 @@ DEPENDENCIES
   rails (= 5.1.6)
   rails-controller-testing (= 1.0.2)
   rails-timeago (~> 2.0)
+  redis (= 3.3.1)
   rubocop
   sass-rails (= 5.0.6)
   spring (= 2.0.2)

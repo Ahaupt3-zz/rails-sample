@@ -9,12 +9,7 @@ class MicropostsController < ApplicationController
     if @micropost.save
       flash[:success] = "Micropost created!"
       ActionCable.server.broadcast "feed_channel",
-                                   id: @micropost.id,
-                                   userid: @micropost.user.id,
-                                   name: @micropost.user.name,
-                                   emaildigest: Digest::MD5.hexdigest(@micropost.user.email.downcase),
-                                   content:  @micropost.content,
-                                   time: @micropost.created_at
+                                   micropost: render_micropost(@micropost)
     else
       @feed_items = []
       render "static_pages/home"
@@ -41,5 +36,9 @@ class MicropostsController < ApplicationController
       def correct_user
         @micropost = current_user.microposts.find_by(id: params[:id])
         redirect_to root_url if @micropost.nil?
+      end
+
+      def render_micropost(micropost)
+        render(partial: "micropost", locals: { micropost: @micropost })
       end
 end
