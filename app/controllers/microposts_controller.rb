@@ -8,7 +8,13 @@ class MicropostsController < ApplicationController
     @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
       flash[:success] = "Micropost created!"
-      redirect_to root_url
+      ActionCable.server.broadcast "feed_channel",
+                                   id: @micropost.id,
+                                   userid: @micropost.user.id,
+                                   name: @micropost.user.name,
+                                   emaildigest: Digest::MD5.hexdigest(@micropost.user.email.downcase),
+                                   content:  @micropost.content,
+                                   time: @micropost.created_at
     else
       @feed_items = []
       render "static_pages/home"
@@ -22,6 +28,11 @@ class MicropostsController < ApplicationController
   end
 
     private
+
+      def get_microposts
+        @microposts = micropost.for_display
+        @micropost  = current_user.microposts.build
+      end
 
       def micropost_params
         params.require(:micropost).permit(:content, :picture)
